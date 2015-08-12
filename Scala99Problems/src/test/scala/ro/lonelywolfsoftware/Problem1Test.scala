@@ -1,7 +1,8 @@
 
+package ro.lonelywolfsoftware
+
 import org.scalatest.FlatSpec
 import org.scalatest._
-import ro.lonelywolfsoftware.Problem1
 class Problem1Test extends FlatSpec with Matchers {
 
   "Last element " should "find last element of a list" in {
