@@ -1,6 +1,5 @@
 package ro.lonelywolfsoftware
 
-import ro.lonelywolfsoftware.Problem3
 import org.scalatest.FlatSpec
 import org.scalatest.Matchers
 
