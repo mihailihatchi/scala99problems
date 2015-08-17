@@ -10,7 +10,7 @@ package ro.lonelywolfsoftware
 object Problem5 {
   def reverse(list: List[Any]): List[Any] = list match {
     case List(x: Any)                => List(x)
-    case (x: Any) :: (xs: List[Any]) => reverse(xs).:+(x)
+    case (x: Any) :: (xs: List[Any]) => reverse(xs):+x
     case _                           => List()
   }
 }
