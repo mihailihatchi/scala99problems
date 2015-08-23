@@ -11,4 +11,9 @@ class Problem7FlattenTest extends FlatSpec with Matchers {
     Problem7Flatten.flatten(List(List(1, 1), 2, List(3, List(5, 8)))) should be(List(1, 1, 2, 3, 5, 8));
 
   }
+
+  "flatten method " should "return a flat list of the structure even for duplicates" in {
+    Problem7Flatten.flatten(List(List(1, 1), 2, List(3, List(5, 8)), List(8))) should be(List(1, 1, 2, 3, 5, 8, 8));
+
+  }
 }
