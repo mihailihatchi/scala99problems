@@ -15,8 +15,8 @@ object Problem9ConsecutivesIntoList {
       if (listToProcess.isEmpty)
         finalList
       else {
-        val firstList = listToProcess takeWhile (_ == listToProcess.head)
-        processList(listToProcess.splitAt(firstList.length)._2, finalList ++ List(firstList));
+        val duplicatesList = listToProcess takeWhile (_ == listToProcess.head)
+        processList(listToProcess.splitAt(duplicatesList.length)._2, finalList ++ List(duplicatesList));
 
       }
     }
